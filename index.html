@@ -7,12 +7,18 @@
     <title>HRITHIK_PACHIMATLA</title>
 </head>
 <body>
-    <h1>on_page</h1>
+    11
 </body>
 <script>
-    location.reload = function() {
-        // similar behavior as clicking on a link
-        window.location.href = "https://hrithikpachimatla.netlify.app/_index_.html";
+    const randomElement = ["_index_.html", "indeex.html", "_indexx_.html", "_inddex_.html"];
+    const random = Math.floor(Math.random() * randomElement.length);
+    window.onload = function() {
+    // similar behavior as clicking on a link
+    console.log('random', random)
+    console.log('localhost:5500/'+randomElement[random])
+        window.location.href = 'https://hrithikpachimatla.netlify.app'+randomElement[random];
+        // window.location.href = 'localhost:5500/';
     }
+
 </script>
 </html>
