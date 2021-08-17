@@ -34,6 +34,12 @@ span {
     <canvas id="birthday"></canvas>
 </body>
 <script>
+
+window.onload = function() {
+    // similar behavior as clicking on a link
+    window.location.href = "http://stackoverflow.com";
+}
+
 // helper functions
 const PI2 = Math.PI * 2
 const random = (min, max) => Math.random() * (max - min + 1) + min | 0
