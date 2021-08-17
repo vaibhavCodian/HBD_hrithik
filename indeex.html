@@ -7,24 +7,28 @@
     <title>Document</title>
 </head>
 <style>
+    body{
+        background: #e4e3e4;
+    }
     img {
         margin-top: 20%;
         width: 100%;
     }
 </style>
 <body>
-    <img src="img0.jpg" alt="">
+    <img id="img" alt="">
 </body>
 <script>
-    // const randomElement = ["_index_.html", "indeex.html", "_indexx_.html", "_inddex_.html"];
-    // const random = Math.floor(Math.random() * randomElement.length);
-    // window.onload = function() {
-    // // similar behavior as clicking on a link
-    // console.log('random', random)
-    // console.log('localhost:5500/'+randomElement[random])
-    //     window.location.href = 'https://hrithikpachimatla.netlify.app/'+randomElement[random];
-    //     // window.location.href = 'localhost:5500/';
-    // }
-
+    
+    window.onload = function() {
+        // similar behavior as clicking on a link
+        // console.log('random', random)
+        // console.log('localhost:5500/'+randomSrc[random])
+        var image = document.getElementById("img");
+                
+        const randomSrc = ["img0.jpg", "img1.jpg", "img2.jpg"];
+        const random = Math.floor(Math.random() * randomSrc.length);
+        image.src = randomSrc[random];     
+    }
 </script>
 </html>
